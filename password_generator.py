@@ -2,7 +2,7 @@ import random
 import argparse
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--length', type=int, default=random.randint(8, 15), help='The number of character of the password')
+parser.add_argument('-l', '--length', type=int, default=random.randint(8, 15), help='The number of character of the password')
 args = parser.parse_args()
 
 password = ""
